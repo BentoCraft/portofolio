@@ -1,0 +1,18 @@
+<!-- @dsCard group="Navigation" height=100 width=960 subtitle="Top bar" -->
+<!doctype html>
+<html><head><meta charset="utf-8">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600&family=IBM+Plex+Sans:wght@400;500&display=swap">
+<style>
+body{margin:0;background:var(--surface);font-family:var(--font-body)}
+nav{display:flex;align-items:center;justify-content:space-between;gap:var(--space-4);padding:var(--space-3) var(--space-6);border-bottom:1px solid var(--line);background:var(--surface-raised);flex-wrap:wrap}
+.mark{font:600 20px/1 var(--font-display);color:var(--ink);text-decoration:none;letter-spacing:-0.01em}
+.mark span{color:var(--accent)}
+.links{display:flex;gap:var(--space-5);align-items:center}
+.links a{color:var(--ink-muted);text-decoration:none;font-size:15px;min-height:44px;display:inline-flex;align-items:center}
+.links a.on{color:var(--ink)}
+.cta{background:var(--accent);color:var(--accent-ink)!important;padding:0 16px;border-radius:var(--radius-sm)}
+</style></head>
+<body><nav aria-label="Main">
+<a class="mark" href="#">Agus<span>.</span></a>
+<div class="links"><a class="on" href="#">Work</a><a href="#">Experience</a><a href="#">Skills</a><a class="cta" href="#">Contact</a></div>
+</nav></body></html>

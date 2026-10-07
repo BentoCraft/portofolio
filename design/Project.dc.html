@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Wine Adore — case study</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600&amp;family=IBM+Plex+Sans:wght@400;500&amp;family=JetBrains+Mono:wght@500&amp;display=swap">
+<style>
+body{margin:0}
+a{color:#0b5fd6}a:hover{color:#084aa8}
+a:focus-visible{outline:2px solid #0b5fd6;outline-offset:2px}
+::selection{background:#e8f0fc;color:#111111}
+.btn{transition:background-color .15s ease-out,border-color .15s ease-out}
+.btn-p:hover{background:#084aa8 !important}
+.btn-g:hover{border-color:#111111 !important}
+.card{transition:border-color .15s ease-out,transform .15s ease-out}
+a.card:hover{border-color:#8a8a8f !important;transform:translateY(-2px)}
+.pf{container-type:inline-size}
+@container (max-width: 720px){
+.pf .title{font-size:40px !important;line-height:44px !important}
+.pf .split{grid-template-columns:minmax(0,1fr) !important;gap:16px !important}
+.pf .stat{font-size:36px !important;line-height:40px !important}
+}
+</style>
+</helmet>
+<div class="pf" style="background: #fafaf7; color: #111111; font-family: 'IBM Plex Sans', 'Helvetica Neue', sans-serif; min-height: 100vh">
+
+<header style="position: sticky; top: 0; z-index: 10; background: rgba(255, 255, 255, 0.92); backdrop-filter: blur(8px); border-bottom: 1px solid #e4e4e0">
+<nav aria-label="Main" style="max-width: 1120px; margin: 0 auto; padding: 12px 24px; display: flex; align-items: center; justify-content: space-between; gap: 24px">
+<a href="Main.dc.html" style="font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 20px; color: #111111; text-decoration: none; min-height: 44px; display: inline-flex; align-items: center">Agus<span style="color: #0b5fd6">.</span></a>
+<a href="Main.dc.html" style="color: #55555a; text-decoration: none; font-size: 15px; min-height: 44px; display: inline-flex; align-items: center; gap: 8px">
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 18l-6-6 6-6"></path></svg>All work</a>
+</nav>
+</header>
+
+<main style="max-width: 1120px; margin: 0 auto; padding: 80px 24px 96px; display: flex; flex-direction: column; gap: 72px">
+
+<!-- Intro -->
+<section style="display: flex; flex-direction: column; gap: 20px; max-width: 800px">
+<span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; line-height: 16px; letter-spacing: 0.08em; text-transform: uppercase; color: #0b5fd6">Case study · Flutter · iOS &amp; Android</span>
+<h1 class="title" style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 64px; line-height: 68px; letter-spacing: -0.02em">Wine Adore</h1>
+<p style="margin: 0; font-size: 20px; line-height: 32px; color: #55555a">A premium wine platform for iOS and Android: e-commerce, a personal wine cellar, venues with corkage fees, event booking and a store-credit wallet. Live on both app stores.</p>
+<div style="display: flex; flex-wrap: wrap; gap: 12px; padding-top: 4px">
+<a href="#" class="btn btn-p" style="background: #0b5fd6; color: #ffffff; text-decoration: none; padding: 0 20px; border-radius: 6px; min-height: 48px; display: inline-flex; align-items: center; font-weight: 500; font-size: 15px">[App Store link]</a>
+<a href="#" class="btn btn-g" style="color: #111111; text-decoration: none; padding: 0 20px; border: 1px solid #8a8a8f; border-radius: 6px; min-height: 48px; display: inline-flex; align-items: center; font-weight: 500; font-size: 15px">[Google Play link]</a>
+</div>
+</section>
+
+<div aria-hidden="true" style="border-radius: 12px; background: #111111; color: #f2f2ee; padding: 40px; min-height: 260px; box-sizing: border-box; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 24px; overflow: hidden">
+<span style="font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 56px; line-height: 56px; letter-spacing: -0.02em; white-space: pre-line">Wine
+marketplace</span>
+<div style="display: flex; flex-direction: column; align-items: flex-end; gap: 16px">
+<svg width="136" height="56" viewBox="0 0 136 56" fill="#6aa5ff"><circle cx="8" cy="8" r="2.5"></circle><circle cx="28" cy="8" r="2.5"></circle><circle cx="48" cy="8" r="2.5"></circle><circle cx="68" cy="8" r="2.5"></circle><circle cx="88" cy="8" r="2.5"></circle><circle cx="108" cy="8" r="2.5"></circle><circle cx="128" cy="8" r="2.5"></circle><circle cx="8" cy="28" r="2.5"></circle><circle cx="28" cy="28" r="2.5"></circle><circle cx="48" cy="28" r="2.5"></circle><circle cx="68" cy="28" r="2.5"></circle><circle cx="88" cy="28" r="2.5"></circle><circle cx="108" cy="28" r="2.5"></circle><circle cx="128" cy="28" r="2.5"></circle><circle cx="8" cy="48" r="2.5"></circle><circle cx="28" cy="48" r="2.5"></circle><circle cx="48" cy="48" r="2.5"></circle><circle cx="68" cy="48" r="2.5"></circle><circle cx="88" cy="48" r="2.5"></circle><circle cx="108" cy="48" r="2.5"></circle><circle cx="128" cy="48" r="2.5"></circle></svg>
+<span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; padding: 5px 12px; border-radius: 999px; background: #0b5fd6; color: #ffffff">Live · iOS + Android</span>
+</div>
+</div>
+
+<!-- Facts -->
+<section aria-label="Project facts" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 24px; padding: 24px 0; border-top: 1px solid #e4e4e0; border-bottom: 1px solid #e4e4e0">
+<div style="display: flex; flex-direction: column; gap: 6px"><span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; color: #55555a">Role</span><span style="font-size: 16px; line-height: 24px">Mobile Developer (Flutter)</span></div>
+<div style="display: flex; flex-direction: column; gap: 6px"><span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; color: #55555a">Timeline</span><span style="font-size: 16px; line-height: 24px">Jul 2024 — Present</span></div>
+<div style="display: flex; flex-direction: column; gap: 6px"><span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; color: #55555a">Platforms</span><span style="font-size: 16px; line-height: 24px">iOS · Android</span></div>
+<div style="display: flex; flex-direction: column; gap: 6px"><span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; color: #55555a">Release</span><span style="font-size: 16px; line-height: 24px">v1.0.6 on both stores</span></div>
+</section>
+
+<!-- Stats -->
+<section aria-label="By the numbers" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 24px">
+<div style="padding: 24px; border: 1px solid #e4e4e0; border-radius: 12px; background: #ffffff; display: flex; flex-direction: column; gap: 8px"><span class="stat" style="font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 48px; line-height: 52px; color: #0b5fd6">105</span><span style="font-size: 15px; line-height: 22px; color: #55555a">Merged pull requests</span></div>
+<div style="padding: 24px; border: 1px solid #e4e4e0; border-radius: 12px; background: #ffffff; display: flex; flex-direction: column; gap: 8px"><span class="stat" style="font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 48px; line-height: 52px; color: #111111">20</span><span style="font-size: 15px; line-height: 22px; color: #55555a">Feature modules in the codebase</span></div>
+<div style="padding: 24px; border: 1px solid #e4e4e0; border-radius: 12px; background: #ffffff; display: flex; flex-direction: column; gap: 8px"><span class="stat" style="font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 48px; line-height: 52px; color: #111111">~1,000</span><span style="font-size: 15px; line-height: 22px; color: #55555a">Dart files across the app</span></div>
+<div style="padding: 24px; border: 1px solid #e4e4e0; border-radius: 12px; background: #ffffff; display: flex; flex-direction: column; gap: 8px"><span class="stat" style="font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 48px; line-height: 52px; color: #111111">5</span><span style="font-size: 15px; line-height: 22px; color: #55555a">Payment &amp; sign-in integrations</span></div>
+</section>
+
+<!-- Screens -->
+<section aria-label="Screens" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 24px">
+<div style="aspect-ratio: 9 / 19; border-radius: 24px; background: #f1f1ec; border: 1px solid #e4e4e0; display: flex; align-items: center; justify-content: center; font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.08em; color: #55555a">[SHOP SCREEN]</div>
+<div style="aspect-ratio: 9 / 19; border-radius: 24px; background: #f1f1ec; border: 1px solid #e4e4e0; display: flex; align-items: center; justify-content: center; font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.08em; color: #55555a">[CELLAR SCREEN]</div>
+<div style="aspect-ratio: 9 / 19; border-radius: 24px; background: #f1f1ec; border: 1px solid #e4e4e0; display: flex; align-items: center; justify-content: center; font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.08em; color: #55555a">[EVENT SCREEN]</div>
+<div style="aspect-ratio: 9 / 19; border-radius: 24px; background: #f1f1ec; border: 1px solid #e4e4e0; display: flex; align-items: center; justify-content: center; font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.08em; color: #55555a">[VENUE MAP SCREEN]</div>
+</section>
+
+<!-- What I built -->
+<section style="display: flex; flex-direction: column; gap: 32px">
+<div style="display: flex; flex-direction: column; gap: 8px; max-width: 640px">
+<span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; line-height: 16px; letter-spacing: 0.08em; text-transform: uppercase; color: #0b5fd6">What I built</span>
+<h2 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 32px; line-height: 38px; letter-spacing: -0.01em">End-to-end features across the app</h2>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px">
+
+<article style="padding: 24px; border: 1px solid #e4e4e0; border-radius: 12px; background: #ffffff; display: flex; flex-direction: column; gap: 10px">
+<span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; color: #55555a">Oct 2024 →</span>
+<h3 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 20px; line-height: 26px">Events</h3>
+<p style="margin: 0; font-size: 15px; line-height: 24px; color: #55555a">Event listing, detail and booking flows, a visitors list, a date-of-birth field, and paying for events with store credit.</p>
+</article>
+
+<article style="padding: 24px; border: 1px solid #e4e4e0; border-radius: 12px; background: #ffffff; display: flex; flex-direction: column; gap: 10px">
+<span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; color: #55555a">Nov — Dec 2024</span>
+<h3 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 20px; line-height: 26px">Payments &amp; auth</h3>
+<p style="margin: 0; font-size: 15px; line-height: 24px; color: #55555a">Apple Sign-In and Google Pay, plus consistent handling of API success codes across auth, payment and address flows.</p>
+</article>
+
+<article style="padding: 24px; border: 1px solid #e4e4e0; border-radius: 12px; background: #ffffff; display: flex; flex-direction: column; gap: 10px">
+<span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; color: #55555a">2025</span>
+<h3 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 20px; line-height: 26px">Shop</h3>
+<p style="margin: 0; font-size: 15px; line-height: 24px; color: #55555a">Filtering and sorting, multi-shop support, delivery options and times, repeat orders, and cart animations.</p>
+</article>
+
+<article style="padding: 24px; border: 1px solid #e4e4e0; border-radius: 12px; background: #ffffff; display: flex; flex-direction: column; gap: 10px">
+<span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; color: #55555a">May — Jun 2025</span>
+<h3 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 20px; line-height: 26px">Cellar inventory</h3>
+<p style="margin: 0; font-size: 15px; line-height: 24px; color: #55555a">Inventory screens built from designs, API-backed inventory history, and PDF export.</p>
+</article>
+
+<article style="padding: 24px; border: 1px solid #e4e4e0; border-radius: 12px; background: #ffffff; display: flex; flex-direction: column; gap: 10px">
+<span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; color: #55555a">2025</span>
+<h3 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 20px; line-height: 26px">Store-credit wallet</h3>
+<p style="margin: 0; font-size: 15px; line-height: 24px; color: #55555a">Top-up, an onboarding flow, filterable history screens and invoice pages.</p>
+</article>
+
+<article style="padding: 24px; border: 1px solid #e4e4e0; border-radius: 12px; background: #ffffff; display: flex; flex-direction: column; gap: 10px">
+<span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; color: #55555a">Venues</span>
+<h3 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 20px; line-height: 26px">Corkage fee</h3>
+<p style="margin: 0; font-size: 15px; line-height: 24px; color: #55555a">Region filters and sorting, cellar browsing with combo chips, a redesigned corkage history, and the payment flow.</p>
+</article>
+
+<article style="padding: 24px; border: 1px solid #e4e4e0; border-radius: 12px; background: #ffffff; display: flex; flex-direction: column; gap: 10px">
+<span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; color: #55555a">Maps</span>
+<h3 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 20px; line-height: 26px">Venue maps</h3>
+<p style="margin: 0; font-size: 15px; line-height: 24px; color: #55555a">A new Google Maps experience and venue detail map, with "open in maps app" handoff.</p>
+</article>
+
+<article style="padding: 24px; border: 1px solid #e4e4e0; border-radius: 12px; background: #ffffff; display: flex; flex-direction: column; gap: 10px">
+<span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; color: #55555a">Oct 2025</span>
+<h3 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 20px; line-height: 26px">Deep linking</h3>
+<p style="margin: 0; font-size: 15px; line-height: 24px; color: #55555a">Links straight into order history, card history and other detail pages.</p>
+</article>
+
+<article style="padding: 24px; border: 1px solid #e4e4e0; border-radius: 12px; background: #ffffff; display: flex; flex-direction: column; gap: 10px">
+<span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; color: #55555a">Checkout</span>
+<h3 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 20px; line-height: 26px">Profile &amp; checkout</h3>
+<p style="margin: 0; font-size: 15px; line-height: 24px; color: #55555a">A guest-user profile, a manual checkout flow, and fixes to promo and discount calculation.</p>
+</article>
+
+<article style="padding: 24px; border: 1px solid #e4e4e0; border-radius: 12px; background: #ffffff; display: flex; flex-direction: column; gap: 10px">
+<span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; color: #55555a">Mar — Apr 2026</span>
+<h3 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 20px; line-height: 26px">Promotions</h3>
+<p style="margin: 0; font-size: 15px; line-height: 24px; color: #55555a">The promotions feature, promo detail pages and target-type validation, plus a redesigned wine detail page.</p>
+</article>
+
+<article style="padding: 24px; border: 1px solid #e4e4e0; border-radius: 12px; background: #ffffff; display: flex; flex-direction: column; gap: 10px">
+<span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; color: #55555a">Ongoing</span>
+<h3 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 20px; line-height: 26px">Reliability</h3>
+<p style="margin: 0; font-size: 15px; line-height: 24px; color: #55555a">Offline and poor-connection handling, empty states, an Android keyboard fix, a Swift Package Manager / CocoaPods adjustment, and bug-fix sprints.</p>
+</article>
+
+</div>
+</section>
+
+<!-- Stack -->
+<section class="split" style="display: grid; grid-template-columns: 280px minmax(0, 1fr); gap: 32px; padding-top: 32px; border-top: 1px solid #e4e4e0">
+<h2 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 28px; line-height: 34px">Tech stack</h2>
+<div style="display: flex; flex-direction: column; gap: 20px">
+<div style="display: flex; flex-direction: column; gap: 10px"><span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; color: #55555a">App</span>
+<ul style="display: flex; flex-wrap: wrap; gap: 8px; list-style: none; margin: 0; padding: 0; font-family: 'JetBrains Mono', monospace; font-size: 13px; line-height: 18px"><li style="padding: 6px 12px; border-radius: 999px; background: #e8f0fc">Flutter</li><li style="padding: 6px 12px; border-radius: 999px; background: #e8f0fc">Dart</li><li style="padding: 6px 12px; border-radius: 999px; background: #e8f0fc">GetX</li><li style="padding: 6px 12px; border-radius: 999px; background: #e8f0fc">Provider</li><li style="padding: 6px 12px; border-radius: 999px; background: #e8f0fc">auto_route</li></ul></div>
+<div style="display: flex; flex-direction: column; gap: 10px"><span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; color: #55555a">Firebase</span>
+<ul style="display: flex; flex-wrap: wrap; gap: 8px; list-style: none; margin: 0; padding: 0; font-family: 'JetBrains Mono', monospace; font-size: 13px; line-height: 18px"><li style="padding: 6px 12px; border-radius: 999px; background: #e8f0fc">Auth</li><li style="padding: 6px 12px; border-radius: 999px; background: #e8f0fc">Firestore</li><li style="padding: 6px 12px; border-radius: 999px; background: #e8f0fc">Messaging</li><li style="padding: 6px 12px; border-radius: 999px; background: #e8f0fc">Remote Config</li><li style="padding: 6px 12px; border-radius: 999px; background: #e8f0fc">Crashlytics</li><li style="padding: 6px 12px; border-radius: 999px; background: #e8f0fc">Analytics</li></ul></div>
+<div style="display: flex; flex-direction: column; gap: 10px"><span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; color: #55555a">Payments &amp; sign-in</span>
+<ul style="display: flex; flex-wrap: wrap; gap: 8px; list-style: none; margin: 0; padding: 0; font-family: 'JetBrains Mono', monospace; font-size: 13px; line-height: 18px"><li style="padding: 6px 12px; border-radius: 999px; background: #e8f0fc">Stripe</li><li style="padding: 6px 12px; border-radius: 999px; background: #e8f0fc">Google Pay</li><li style="padding: 6px 12px; border-radius: 999px; background: #e8f0fc">Apple Pay</li><li style="padding: 6px 12px; border-radius: 999px; background: #e8f0fc">Google Sign-In</li><li style="padding: 6px 12px; border-radius: 999px; background: #e8f0fc">Apple Sign-In</li></ul></div>
+<div style="display: flex; flex-direction: column; gap: 10px"><span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; color: #55555a">Platform &amp; workflow</span>
+<ul style="display: flex; flex-wrap: wrap; gap: 8px; list-style: none; margin: 0; padding: 0; font-family: 'JetBrains Mono', monospace; font-size: 13px; line-height: 18px"><li style="padding: 6px 12px; border-radius: 999px; background: #e8f0fc">Google Maps</li><li style="padding: 6px 12px; border-radius: 999px; background: #e8f0fc">Deep links</li><li style="padding: 6px 12px; border-radius: 999px; background: #e8f0fc">Codemagic CI/CD</li><li style="padding: 6px 12px; border-radius: 999px; background: #e8f0fc">FVM</li><li style="padding: 6px 12px; border-radius: 999px; background: #e8f0fc">Pre-commit hooks</li><li style="padding: 6px 12px; border-radius: 999px; background: #e8f0fc">Conventional Commits</li></ul></div>
+</div>
+</section>
+
+<!-- Outcome -->
+<section class="split" style="display: grid; grid-template-columns: 280px minmax(0, 1fr); gap: 32px; padding-top: 32px; border-top: 1px solid #e4e4e0">
+<h2 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 28px; line-height: 34px">Outcome</h2>
+<div style="display: flex; flex-direction: column; gap: 12px; font-size: 17px; line-height: 28px; color: #55555a">
+<p style="margin: 0">I shipped 100+ merged pull requests to a production Flutter app that is live on the App Store and Google Play, building complete flows for events, shop, store credit, cellar inventory, corkage venues and promotions.</p>
+<p style="margin: 0">Along the way I kept a large, 20-module codebase healthy with offline handling, consistent error handling and steady UI polish.</p>
+<p style="margin: 0">[ADD A REAL METRIC IF YOU HAVE ONE — DOWNLOADS, STORE RATING, ORDERS.]</p>
+</div>
+</section>
+
+<a href="Main.dc.html" class="card" style="align-self: flex-start; display: flex; flex-direction: column; gap: 4px; text-decoration: none; padding: 24px; border: 1px solid #e4e4e0; border-radius: 12px; background: #ffffff; min-width: 280px">
+<span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; color: #55555a">More work</span>
+<span style="font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 22px; line-height: 28px; color: #111111">AJB ERP, Vacaba and more →</span>
+</a>
+</main>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":4500}}'>
+class Component extends DCLogic {
+renderVals() {
+return {};
+}
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!-- @dsCard height=300 -->
+<!doctype html>
+<html><head><meta charset="utf-8">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600&family=IBM+Plex+Sans:wght@400&display=swap">
+<style>
+body{margin:0;background:var(--surface)}
+.cover{position:relative;width:960px;height:300px;background:var(--surface);overflow:hidden}
+svg{position:absolute;left:0;top:0}
+.accent{fill:var(--accent)}
+.ink{fill:var(--ink)}
+.soft{fill:var(--accent-soft)}
+.sunk{fill:var(--surface-sunken)}
+.dot{fill:var(--accent-ink)}
+.dot2{fill:var(--accent)}
+.r{rx:var(--radius-md)}
+.text{position:absolute;left:64px;top:150px;max-width:880px}
+h1{margin:0;font:600 56px/1 var(--font-display);letter-spacing:-0.02em;color:var(--ink)}
+p{margin:16px 0 0;font:400 14px/20px var(--font-body);color:var(--ink-muted)}
+</style></head>
+<body><div class="cover">
+<!--
+blocks: accent 400×112, ink 160×112, accent-soft 216×72, surface-sunken 120×112 — bleeding off the top edge; radius-md corners
+arrangement: top band (name too wide for the 440px zone), strip of unequal bands from x=64 to the right edge
+pattern: dot grid at space-4 (24px) pitch inside the accent block — "precise, technical, mono, a grid" fits a developer's system
+scales: space-4 pitch and gaps, space-6 left inset, radius-md on block corners
+-->
+<svg width="960" height="120" viewBox="0 0 960 120" aria-hidden="true">
+<rect class="accent r" x="64" y="-16" width="400" height="128"/>
+<rect class="ink r" x="488" y="-16" width="160" height="128"/>
+<rect class="soft r" x="672" y="-16" width="216" height="88"/>
+<rect class="sunk r" x="912" y="-16" width="120" height="128"/>
+<g class="dot">
+<circle cx="292" cy="24" r="2.5"/><circle cx="316" cy="24" r="2.5"/><circle cx="340" cy="24" r="2.5"/><circle cx="364" cy="24" r="2.5"/><circle cx="388" cy="24" r="2.5"/><circle cx="412" cy="24" r="2.5"/><circle cx="436" cy="24" r="2.5"/>
+<circle cx="292" cy="48" r="2.5"/><circle cx="316" cy="48" r="2.5"/><circle cx="340" cy="48" r="2.5"/><circle cx="364" cy="48" r="2.5"/><circle cx="388" cy="48" r="2.5"/><circle cx="412" cy="48" r="2.5"/><circle cx="436" cy="48" r="2.5"/>
+<circle cx="292" cy="72" r="2.5"/><circle cx="316" cy="72" r="2.5"/><circle cx="340" cy="72" r="2.5"/><circle cx="364" cy="72" r="2.5"/><circle cx="388" cy="72" r="2.5"/><circle cx="412" cy="72" r="2.5"/><circle cx="436" cy="72" r="2.5"/>
+</g>
+<g class="dot2">
+<circle cx="696" cy="96" r="2.5"/><circle cx="720" cy="96" r="2.5"/><circle cx="744" cy="96" r="2.5"/><circle cx="768" cy="96" r="2.5"/>
+</g>
+</svg>
+<div class="text">
+<h1>Agus Juniartha — Personal</h1>
+<p>A light, minimal system for a Flutter developer's portfolio: one blue, lots of air.</p>
+</div>
+</div></body></html>
